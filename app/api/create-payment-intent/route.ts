@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import { stripe } from "@/lib/stripe"
+import { getStripe } from "@/lib/stripe"
 
 export async function POST(request: Request) {
   let body: { amount?: unknown; giftName?: unknown; email?: unknown }
@@ -21,7 +21,7 @@ export async function POST(request: Request) {
   const origin = request.headers.get("origin") || process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
 
   try {
-    const session = await stripe.checkout.sessions.create({
+    const session = await getStripe().checkout.sessions.create({
       mode: "payment",
       ui_mode: "elements",
       line_items: [
