@@ -1,0 +1,52 @@
+// ---------------------------------------------------------------------------
+// Global theme tokens and configurable typography defaults
+// ---------------------------------------------------------------------------
+
+:root {
+  color-scheme: dark;
+  --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-body);
+  --background: oklch(0.19 0.028 258);
+  --background-deep: oklch(0.16 0.02 258.16);
+  --foreground: oklch(0.96 0.012 90);
+  --card: oklch(0.235 0.03 258);
+  --card-foreground: oklch(0.96 0.012 90);
+  --popover: oklch(0.235 0.03 258);
+  --popover-foreground: oklch(0.96 0.012 90);
+  --primary: oklch(0.62 0.14 244);
+  --primary-foreground: oklch(0.98 0.01 244);
+  --secondary: oklch(0.3 0.03 258);
+  --secondary-foreground: oklch(0.96 0.012 90);
+  --muted: oklch(0.28 0.025 258);
+  --muted-foreground: oklch(0.72 0.02 258);
+  --accent: oklch(0.8 0.13 80);
+  --accent-foreground: oklch(0.22 0.04 80);
+  --destructive: oklch(0.63 0.19 28);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.62 0.14 244);
+  --gold: oklch(0.8 0.13 80);
+  --gold-foreground: oklch(0.22 0.04 80);
+  --terracotta: oklch(0.63 0.19 28);
+  --terracotta-foreground: oklch(0.98 0.02 28);
+  --chart-1: oklch(0.62 0.14 244);
+  --chart-2: oklch(0.8 0.13 80);
+  --chart-3: oklch(0.63 0.19 28);
+  --chart-4: oklch(0.7 0.1 160);
+  --chart-5: oklch(0.55 0.12 300);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.21 0.03 258);
+  --sidebar-foreground: oklch(0.96 0.012 90);
+  --sidebar-primary: oklch(0.62 0.14 244);
+  --sidebar-primary-foreground: oklch(0.98 0.01 244);
+  --sidebar-accent: oklch(0.3 0.03 258);
+  --sidebar-accent-foreground: oklch(0.96 0.012 90);
+  --sidebar-border: oklch(1 0 0 / 12%);
+  --sidebar-ring: oklch(0.62 0.14 244);
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}

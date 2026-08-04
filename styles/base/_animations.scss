@@ -1,0 +1,101 @@
+// ---------------------------------------------------------------------------
+// Shared keyframes + animation utility classes used across the app
+// (donation float-ups, alert banners, live pulse indicator, chat, etc.)
+// ---------------------------------------------------------------------------
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0) scale(0.6);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(-10%) scale(1);
+  }
+  100% {
+    transform: translateY(-320%) scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes alert-in {
+  0% {
+    transform: translateY(-120%) scale(0.9);
+    opacity: 0;
+  }
+  12% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  88% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120%) scale(0.9);
+    opacity: 0;
+  }
+}
+
+@keyframes live-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes eq-bar {
+  0%,
+  100% {
+    transform: scaleY(0.2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes chat-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popup-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-float-up {
+  animation: float-up 2.6s ease-out forwards;
+}
+.animate-alert-in {
+  animation: alert-in 5s ease-in-out forwards;
+}
+.animate-live-pulse {
+  animation: live-pulse 1.4s ease-in-out infinite;
+}
+.animate-chat-in {
+  animation: chat-in 0.28s ease-out;
+}

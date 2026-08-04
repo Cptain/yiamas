@@ -1,0 +1,54 @@
+// ---------------------------------------------------------------------------
+// Landing page responsive breakpoints
+// ---------------------------------------------------------------------------
+
+@media (min-width: 900px) {
+  .landing-hero__content {
+    max-width: min(960px, 94vw);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 16px 52px;
+  }
+
+  .landing-logo {
+    grid-column: 1 / -1;
+  }
+
+  .landing-hero__event,
+  .landing-hero__artist,
+  .landing-hero__poster,
+  .landing-cta-row {
+    grid-column: 1;
+  }
+
+  .landing-hero__poster {
+    width: 100%;
+  }
+
+  .landing-countdown {
+    grid-column: 2;
+    grid-row: 2 / 6;
+    align-self: stretch;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-hero__content {
+    gap: 20px;
+    padding: 24px 18px;
+  }
+
+  .landing-hero__poster {
+    width: 100%;
+  }
+
+  .landing-countdown {
+    padding: 16px 20px;
+  }
+
+  .landing-countdown__unit {
+    min-width: 52px;
+  }
+}

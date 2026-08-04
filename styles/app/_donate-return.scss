@@ -1,0 +1,72 @@
+// ---------------------------------------------------------------------------
+// Stripe 3D Secure return page (fallback path — rarely reached, see route.ts)
+// ---------------------------------------------------------------------------
+
+.donate-return {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+  padding-inline: 1rem;
+
+  &__panel {
+    width: 100%;
+    max-width: 24rem;
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--border);
+    background: var(--card);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  }
+
+  &__title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+  }
+
+  &__spinner {
+    margin: 1.5rem auto 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--accent);
+    animation: spin 1s linear infinite;
+  }
+
+  &__icon {
+    margin-inline: auto;
+    height: 2.5rem;
+    width: 2.5rem;
+
+    &--success {
+      color: var(--accent);
+    }
+
+    &--failed {
+      color: var(--destructive);
+    }
+  }
+
+  &__text {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--foreground);
+  }
+
+  &__link {
+    margin-top: 1.5rem;
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--accent);
+    text-underline-offset: 4px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

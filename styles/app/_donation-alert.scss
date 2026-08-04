@@ -1,0 +1,108 @@
+// ---------------------------------------------------------------------------
+// Donation alert banner shown over the video player
+// ---------------------------------------------------------------------------
+
+.donation-alert {
+  display: flex;
+  max-width: 28rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+
+  &--gold {
+    border-color: color-mix(in oklch, var(--gold) 60%, transparent);
+    background: color-mix(in oklch, var(--gold) 15%, transparent);
+
+    .donation-alert__user { color: var(--gold); }
+  }
+
+  &--primary {
+    border-color: color-mix(in oklch, var(--primary) 60%, transparent);
+    background: color-mix(in oklch, var(--primary) 15%, transparent);
+
+    .donation-alert__user { color: var(--primary); }
+  }
+
+  &--terracotta {
+    border-color: color-mix(in oklch, var(--terracotta) 60%, transparent);
+    background: color-mix(in oklch, var(--terracotta) 15%, transparent);
+
+    .donation-alert__user { color: var(--terracotta); }
+  }
+
+  &__icon {
+    display: flex;
+    height: 2.75rem;
+    width: 2.75rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-lg);
+
+    svg {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+
+    &--gold {
+      background: var(--gold);
+      color: var(--gold-foreground);
+    }
+
+    &--primary {
+      background: var(--primary);
+      color: var(--primary-foreground);
+    }
+
+    &--terracotta {
+      background: var(--terracotta);
+      color: var(--terracotta-foreground);
+    }
+  }
+
+  &__body {
+    min-width: 0;
+    color: white;
+  }
+
+  &__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.875rem;
+  }
+
+  &__user {
+    font-weight: 700;
+  }
+
+  &__verb {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &__gift {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  &__amount {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 0.125rem;
+  }
+
+  // When pinned via the dev test panel, keep the alert fully visible indefinitely
+  &--pinned {
+    animation: none;
+    opacity: 1;
+  }
+}

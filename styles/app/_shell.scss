@@ -1,0 +1,113 @@
+// ---------------------------------------------------------------------------
+// App shell — top-level layout (header + main grid: stream column + chat)
+// ---------------------------------------------------------------------------
+
+.app {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  // Seamless logo pattern — low-opacity decorative background texture
+  &::before {
+    content: '';
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: -9;
+    background-image: url('/bg-pattern.svg');
+    background-repeat: repeat;
+    background-size: 600px 450px;
+  }
+
+  &__glow {
+    pointer-events: none;
+    position: fixed;
+    inset-inline: 0;
+    top: 0;
+    z-index: -10;
+    height: 420px;
+    background: radial-gradient(
+      60% 100% at 50% 0%,
+      color-mix(in oklch, var(--gold) 16%, transparent),
+      transparent 70%
+    );
+  }
+
+  &__main {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1600px;
+    flex: 1;
+
+    @media (min-width: 640px) {
+      padding: 1.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      padding-block: 1.5rem;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 0;
+
+    @media (min-width: 640px) {
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: minmax(0, 1fr) 360px;
+      gap: 1.5rem;
+      transition: grid-template-columns 0.3s ease;
+    }
+
+    &--no-chat {
+      @media (min-width: 1024px) {
+        grid-template-columns: minmax(0, 1fr) 0px;
+        gap: 0;
+      }
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    @media (min-width: 640px) {
+      gap: 1rem;
+    }
+
+    &--chat {
+      height: 520px;
+
+      @media (min-width: 1024px) {
+        height: auto;
+        position: sticky;
+        top: 5.5rem;
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        transition: opacity 0.25s ease;
+      }
+    }
+
+    &--donation {
+      @media (min-width: 1024px) {
+        grid-column: 1;
+        grid-row: 2;
+      }
+    }
+
+    &--chat-hidden {
+      pointer-events: none;
+
+      @media (min-width: 1024px) {
+        opacity: 0;
+      }
+    }
+  }
+}

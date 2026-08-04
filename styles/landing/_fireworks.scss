@@ -1,0 +1,120 @@
+// ---------------------------------------------------------------------------
+// Landing page background fireworks + twinkling sparkle effects
+// ---------------------------------------------------------------------------
+
+.landing-fireworks {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.landing-firework {
+  position: absolute;
+  left: var(--fw-left, 50%);
+  bottom: var(--fw-bottom, 60%);
+  width: 110px;
+  height: 110px;
+  color: var(--fw-color, #f2a53c);
+  opacity: 0;
+  background: repeating-conic-gradient(
+    from 0deg,
+    currentColor 0deg 1.5deg,
+    var(--fw-color2, currentColor) 1.5deg 3deg,
+    transparent 3deg 18deg
+  );
+  -webkit-mask-image: radial-gradient(circle, transparent 0%, transparent 12%, black 26%, black 55%, transparent 76%);
+  mask-image: radial-gradient(circle, transparent 0%, transparent 12%, black 26%, black 55%, transparent 76%);
+  filter: drop-shadow(0 0 5px currentColor) drop-shadow(0 0 12px currentColor);
+  animation: landing-firework-burst 4s ease-out infinite;
+  animation-delay: var(--fw-delay, 0s);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 2px;
+    height: 90px;
+    background: linear-gradient(180deg, transparent 0%, currentColor 100%);
+    transform-origin: bottom center;
+    transform: translateX(-1px) scaleY(0);
+    opacity: 0;
+    animation: landing-firework-trail 4s ease-out infinite;
+    animation-delay: var(--fw-delay, 0s);
+  }
+}
+
+@keyframes landing-firework-trail {
+  0% {
+    transform: translateX(-1px) scaleY(0);
+    opacity: 0.9;
+  }
+  7% {
+    transform: translateX(-1px) scaleY(1);
+    opacity: 0.9;
+  }
+  9%,
+  100% {
+    transform: translateX(-1px) scaleY(1);
+    opacity: 0;
+  }
+}
+
+@keyframes landing-firework-burst {
+  0%,
+  7% {
+    transform: translate(-50%, 50%) scale(calc(0.08 * var(--fw-scale, 1)));
+    opacity: 0;
+  }
+  9% {
+    opacity: 1;
+  }
+  16% {
+    transform: translate(-50%, 50%) scale(calc(0.35 * var(--fw-scale, 1)));
+    opacity: 1;
+  }
+  45% {
+    transform: translate(-50%, 50%) scale(calc(1 * var(--fw-scale, 1)));
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.landing-sparkle {
+  position: absolute;
+  left: var(--sp-left, 50%);
+  top: var(--sp-top, 20%);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #ffe9b8;
+  box-shadow: 0 0 8px 2px rgba(255, 233, 184, 0.8);
+  opacity: 0;
+  animation: landing-sparkle-twinkle 2.8s ease-in-out infinite;
+  animation-delay: var(--sp-delay, 0s);
+}
+
+@keyframes landing-sparkle-twinkle {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-firework,
+  .landing-firework::before,
+  .landing-sparkle {
+    animation: none;
+    opacity: 0;
+  }
+}

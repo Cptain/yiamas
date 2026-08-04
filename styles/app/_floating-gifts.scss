@@ -1,0 +1,36 @@
+// ---------------------------------------------------------------------------
+// Floating gift icons that rise up over the video player
+// ---------------------------------------------------------------------------
+
+.floating-gifts {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+
+  &__item {
+    position: absolute;
+    bottom: 4rem;
+  }
+
+  &__icon {
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    &--gold {
+      color: var(--gold);
+    }
+
+    &--primary {
+      color: var(--primary);
+    }
+
+    &--terracotta {
+      color: var(--terracotta);
+    }
+  }
+}

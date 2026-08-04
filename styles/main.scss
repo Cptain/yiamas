@@ -1,0 +1,26 @@
+// ---------------------------------------------------------------------------
+// Main SCSS entry point — aggregates all organized partials.
+// Imported alongside app/globals.css (which holds Tailwind's directives,
+// theme tokens, and base layer that must stay in plain CSS).
+// ---------------------------------------------------------------------------
+
+@use "base/theme";
+@use "base/animations";
+@use "landing/hero";
+@use "landing/fireworks";
+@use "landing/countdown";
+@use "landing/cta";
+@use "landing/responsive";
+@use "app/button";
+@use "app/header";
+@use "app/player";
+@use "app/stream-info";
+@use "app/donation-panel";
+@use "app/chat";
+@use "app/modal";
+@use "app/register-form";
+@use "app/floating-gifts";
+@use "app/donation-alert";
+@use "app/shell";
+@use "app/donate-return";
+@use "app/dev-test-panel";

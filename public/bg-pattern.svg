@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" overflow="hidden">
+  <defs>
+    <!-- Coloured symbol (56×56 viewBox) -->
+    <symbol id="sym" viewBox="0 0 56 56">
+      <line x1="28" y1="15.52" x2="28" y2="8.99" stroke="#f08b40" stroke-width="1.71" stroke-miterlimit="10" fill="none"/>
+      <line x1="33.08" y1="17.33" x2="37.61" y2="12.68" stroke="#f08b40" stroke-width="1.71" stroke-miterlimit="10" fill="none"/>
+      <line x1="22.76" y1="17.33" x2="18.11" y2="12.68" stroke="#f08b40" stroke-width="1.71" stroke-miterlimit="10" fill="none"/>
+      <path fill="#fff" d="M17.37,47.01c-.1,0-.19-.01-.29-.04h0l-12.14-2.99c-.62-.15-1.01-.74-.92-1.37l2.97-21.11c.05-.34.24-.65.53-.85.29-.2.65-.26.98-.18l16.47,4.07c.34.08.63.31.79.62.16.31.19.67.07,1l-7.3,20.04c-.18.5-.65.81-1.16.81ZM5.53,42.58l11.67,2.88,7.12-19.54-15.89-3.92-2.89,20.58ZM5.5,42.82h0s0,0,0,0Z"/>
+      <path fill="#fff" d="M38.63,47.01c-.51,0-.98-.32-1.16-.81l-7.3-20.04c-.12-.33-.09-.69.07-1,.17-.31.45-.53.79-.62l16.47-4.06c.34-.08.7-.02.99.18.29.19.48.5.53.85l2.97,21.11c.09.63-.31,1.21-.92,1.37l-12.14,2.99c-.1.02-.2.04-.29.04ZM38.88,45.68h0ZM31.68,25.92l7.12,19.54,11.67-2.88-2.89-20.58-15.89,3.92Z"/>
+      <polygon fill="#f08b40" fill-rule="evenodd" points="9.45 31.14 8.23 40.36 15.36 42.13 19.85 30.49 9.45 31.14"/>
+      <polygon fill="#f08b40" fill-rule="evenodd" points="46.55 31.14 47.77 40.36 40.64 42.13 36.16 30.49 46.55 31.14"/>
+    </symbol>
+
+    <!-- Full brand wordmark "YIAMAS LIVE!" — white + orange, viewBox 170.84×31.03 -->
+    <symbol id="wm-live" viewBox="0 0 170.84 31.03">
+      <path fill="#f08b40" d="M118.02,30.54V.48h4.34v25.79h6.91v4.28h-11.25Z"/>
+      <path fill="#f08b40" d="M132.58.48h4.34v30.07h-4.34V.48Z"/>
+      <path fill="#f08b40" d="M151.27,30.54h-5.95L140.85.48h4.38l3.05,24.7,3.06-24.7h4.38l-4.46,30.07Z"/>
+      <path fill="#f08b40" d="M159.59.48h11.25v4.28h-6.91v11.79h5.95v4.29h-5.95v5.43h6.91v4.28h-11.25V.48Z"/>
+      <path fill="#fff" d="M4.6.48l2.96,15.54L10.51.48h4.6l-5.38,22.16v7.91h-4.34v-7.91L0,.48h4.6Z"/>
+      <path fill="#fff" d="M19.96.48h4.34v30.07h-4.34V.48Z"/>
+      <path fill="#fff" d="M38.37,17.15V6.31c0-1.36-.62-2.04-1.87-2.04h-.03c-1.26.01-1.88.69-1.88,2.04v7.36h-4.34v-7.36c0-4.21,2.08-6.31,6.24-6.31s6.22,2.1,6.22,6.31v24.23h-3.88l-.31-1.85c-.88,1.55-2.18,2.33-3.89,2.34-1.41,0-2.47-.53-3.19-1.59s-1.08-2.36-1.08-3.91c0-5.07,2.67-7.86,8.01-8.38ZM38.37,21.27c-2.45.61-3.68,1.88-3.68,3.8,0,1.31.29,1.96.87,1.96,1.87-.14,2.8-1.53,2.8-4.17v-1.59Z"/>
+      <path fill="#fff" d="M56.59,15.91l-3.83-6.53v21.18h-4.18V.49h3.42l4.6,7.75L61.19.49h3.42v30.07h-4.18V9.38l-3.83,6.53Z"/>
+      <path fill="#fff" d="M78.6,17.15V6.31c0-1.36-.62-2.04-1.87-2.04h-.03c-1.26.01-1.88.69-1.88,2.04v7.36h-4.34v-7.36c0-4.21,2.08-6.31,6.24-6.31s6.22,2.1,6.22,6.31v24.23h-3.88l-.31-1.85c-.88,1.55-2.18,2.33-3.89,2.34-1.41,0-2.47-.53-3.19-1.59-.72-1.06-1.08-2.36-1.08-3.91,0-5.07,2.67-7.86,8.01-8.38ZM78.6,21.27c-2.45.61-3.68,1.88-3.68,3.8,0,1.31.29,1.96.87,1.96,1.87-.14,2.8-1.53,2.8-4.17v-1.59Z"/>
+      <path fill="#fff" d="M88.51,6.31c0-4.21,2.07-6.31,6.22-6.31s6.24,2.1,6.24,6.31v7.36h-4.34v-7.36c0-1.35-.63-2.03-1.88-2.04h-.03c-1.25,0-1.87.68-1.87,2.04v5.09c0,2.36,1.35,4.36,4.06,5.99,2.71,1.93,4.06,4.37,4.06,7.31,0,4.22-2.07,6.33-6.22,6.33-4.16-.01-6.24-2.12-6.24-6.33v-2.11h4.34v2.11c0,1.36.63,2.04,1.9,2.04s1.88-.68,1.88-2.04c0-1.45-1.35-3.15-4.06-5.09-2.71-1.93-4.06-4.64-4.06-8.12v-5.18Z"/>
+      <path fill="#f08b40" d="M106.69,25.56h4.98v4.98h-4.98v-4.98Z"/>
+    </symbol>
+
+    <!-- White wordmark "YIAMAS!" — cropped viewBox to just the text region -->
+    <symbol id="wm" viewBox="3 20 50 15">
+      <path fill="#fff" d="M5.98,21.53l1.27,6.68,1.27-6.68h1.98l-2.31,9.52v3.4h-1.86v-3.4l-2.32-9.52h1.98Z"/>
+      <path fill="#fff" d="M12.58,21.53h1.86v12.92h-1.86v-12.92Z"/>
+      <path fill="#fff" d="M20.49,28.7v-4.66c0-.58-.27-.88-.8-.88h-.01c-.54,0-.81.3-.81.88v3.16h-1.86v-3.16c0-1.81.89-2.71,2.68-2.71s2.67.9,2.67,2.71v10.41h-1.67l-.13-.8c-.38.67-.93,1-1.67,1.01-.61,0-1.06-.23-1.37-.69-.31-.46-.47-1.02-.47-1.68,0-2.18,1.15-3.38,3.45-3.6ZM20.49,30.47c-1.05.26-1.58.81-1.58,1.63,0,.56.12.84.38.84.8-.06,1.21-.66,1.21-1.79v-.68Z"/>
+      <path fill="#fff" d="M28.33,28.17l-1.65-2.81v9.1h-1.8v-12.92h1.47l1.98,3.33,1.98-3.33h1.47v12.92h-1.8v-9.1l-1.65,2.81Z"/>
+      <path fill="#fff" d="M37.79,28.7v-4.66c0-.58-.27-.88-.8-.88h-.01c-.54,0-.81.3-.81.88v3.16h-1.86v-3.16c0-1.81.89-2.71,2.68-2.71s2.67.9,2.67,2.71v10.41h-1.67l-.13-.8c-.38.67-.93,1-1.67,1.01-.61,0-1.06-.23-1.37-.69-.31-.46-.47-1.02-.47-1.68,0-2.18,1.15-3.38,3.45-3.6ZM37.79,30.47c-1.05.26-1.58.81-1.58,1.63,0,.56.12.84.38.84.8-.06,1.21-.66,1.21-1.79v-.68Z"/>
+      <path fill="#fff" d="M42.04,24.04c0-1.81.89-2.71,2.67-2.71s2.68.9,2.68,2.71v3.16h-1.86v-3.16c0-.58-.27-.87-.81-.88h-.01c-.54,0-.8.29-.8.88v2.19c0,1.01.58,1.87,1.75,2.58,1.16.83,1.75,1.88,1.75,3.14,0,1.81-.89,2.72-2.67,2.72-1.79,0-2.68-.91-2.68-2.72v-.91h1.86v.91c0,.58.27.88.82.88s.81-.29.81-.88c0-.62-.58-1.35-1.75-2.19-1.16-.83-1.75-1.99-1.75-3.49v-2.23Z"/>
+      <path fill="#fff" d="M52,21.53l-.14,8.09h-1.86l-.14-8.09h2.14ZM49.86,32.32h2.14v2.14h-2.14v-2.14Z"/>
+    </symbol>
+  </defs>
+
+  <!--
+    Layout — all positions verified non-overlapping using rotated bounding boxes.
+    Each element's axis-aligned bbox (after rotation) has positive clearance to all neighbours.
+
+    Row 1  (y ≈ 45–115):
+      A  sym  70×70  rot=-18  center=(70,60)      bbox: x 21–119  y 11–109
+      B  wm-live 175×32 rot=7  center=(310,50)     bbox: x 221–399 y 23–77
+      C  sym  38×38  rot=22   center=(550,65)      bbox: x 523–577 y 38–92
+
+    Row 2  (y ≈ 125–215):
+      D  wm   130×39  rot=-14  center=(115,170)    bbox: x 47–183  y 135–205
+      E  sym  50×50   rot=35   center=(310,155)    bbox: x 275–345 y 120–190
+      F  wm   150×45  rot=16   center=(490,168)    bbox: x 412–568 y 126–210
+
+    Row 3  (y ≈ 235–325):
+      G  sym  46×46   rot=45   center=(65,265)     bbox: x 33–97   y 233–297
+      H  wm-live 145×26 rot=-9 center=(300,260)    bbox: x 226–374 y 236–284
+      I  sym  60×60   rot=-25  center=(535,280)    bbox: x 493–577 y 238–322
+
+    Row 4  (y ≈ 333–420):
+      J  wm-live 125×23 rot=20 center=(115,365)    bbox: x 52–178  y 333–397
+      K  sym  44×44   rot=-20  center=(270,375)    bbox: x 239–301 y 344–406
+      L  wm   110×33  rot=-8   center=(430,368)    bbox: x 373–487 y 344–392
+      M  sym  36×36   rot=50   center=(565,370)    bbox: x 540–590 y 345–395
+  -->
+
+  <!-- A — sym large, top-left -->
+  <g opacity="0.07" transform="translate(70,60) rotate(-18)">
+    <use href="#sym" width="70" height="70" x="-35" y="-35"/>
+  </g>
+
+  <!-- B — YIAMAS LIVE! wide, top-centre -->
+  <g opacity="0.06" transform="translate(310,50) rotate(7)">
+    <use href="#wm-live" width="175" height="32" x="-87.5" y="-16"/>
+  </g>
+
+  <!-- C — sym small, top-right -->
+  <g opacity="0.05" transform="translate(550,65) rotate(22)">
+    <use href="#sym" width="38" height="38" x="-19" y="-19"/>
+  </g>
+
+  <!-- D — YIAMAS! medium, left upper-mid -->
+  <g opacity="0.07" transform="translate(115,170) rotate(-14)">
+    <use href="#wm" width="130" height="39" x="-65" y="-19.5"/>
+  </g>
+
+  <!-- E — sym medium, centre upper-mid -->
+  <g opacity="0.08" transform="translate(310,155) rotate(35)">
+    <use href="#sym" width="50" height="50" x="-25" y="-25"/>
+  </g>
+
+  <!-- F — YIAMAS! medium, right upper-mid -->
+  <g opacity="0.055" transform="translate(490,168) rotate(16)">
+    <use href="#wm" width="150" height="45" x="-75" y="-22.5"/>
+  </g>
+
+  <!-- G — sym medium, left lower-mid -->
+  <g opacity="0.06" transform="translate(65,265) rotate(45)">
+    <use href="#sym" width="46" height="46" x="-23" y="-23"/>
+  </g>
+
+  <!-- H — YIAMAS LIVE! medium, centre lower-mid -->
+  <g opacity="0.065" transform="translate(300,260) rotate(-9)">
+    <use href="#wm-live" width="145" height="26" x="-72.5" y="-13"/>
+  </g>
+
+  <!-- I — sym large, right lower-mid -->
+  <g opacity="0.07" transform="translate(535,280) rotate(-25)">
+    <use href="#sym" width="60" height="60" x="-30" y="-30"/>
+  </g>
+
+  <!-- J — YIAMAS LIVE! small, left bottom -->
+  <g opacity="0.07" transform="translate(115,365) rotate(20)">
+    <use href="#wm-live" width="125" height="23" x="-62.5" y="-11.5"/>
+  </g>
+
+  <!-- K — sym medium, centre-left bottom -->
+  <g opacity="0.06" transform="translate(270,375) rotate(-20)">
+    <use href="#sym" width="44" height="44" x="-22" y="-22"/>
+  </g>
+
+  <!-- L — YIAMAS! narrow, centre-right bottom -->
+  <g opacity="0.08" transform="translate(430,368) rotate(-8)">
+    <use href="#wm" width="110" height="33" x="-55" y="-16.5"/>
+  </g>
+
+  <!-- M — sym tiny, far-right bottom -->
+  <g opacity="0.04" transform="translate(565,370) rotate(50)">
+    <use href="#sym" width="36" height="36" x="-18" y="-18"/>
+  </g>
+</svg>
